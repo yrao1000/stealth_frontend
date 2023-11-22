@@ -17,7 +17,8 @@ Amplify.configure({
   },
   ssr: true,
 });
-
+console.log(process.env.USER_POOL_ID);
+console.log(process.env.USER_POOL_CLIENT_ID);
 function App({ Component, pageProps }) {
   const pathName = usePathname();
   const unSecurePaths = ["/", "/login"];
